@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1265, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sina Järvilehto's portfolio website showcasing her skills, experiences, and contact information.">
+    <title>House of SJ</title>
+    <style>
+      .responsive-banner {
+        max-width: calc(100vw - 400px);
+        margin: 80px auto 16px auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      .responsive-banner-img {
+        width: 100%;
+        max-width: 1265px;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 0;
+      }
+      @media (max-width: 900px) {
+        .responsive-banner {
+          max-width: 100vw;
+          margin: 32px 0 12px 0;
+          padding: 0 8px;
+        }
+        .responsive-banner-img {
+          max-width: 100vw;
+          height: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="styleSJ.css">
+    <!-- Kukkavitut -->
+    <img src="kuvat/HSJ_kukat.png" alt="Flower Left" class="side-flower side-flower-left">
+    <img src="kuvat/HSJ_kukat.png" alt="Flower Right" class="side-flower side-flower-right">
+    <!-- Fixed Navigation bar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="kuvat/HSJ_logo.svg" alt="SJ Logo" style="height:40px; width:auto; vertical-align:middle;">
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="perustiedot.html">Perustiedot</a></li>
+        <li><a href="tyokokemus.html">Työkokemus</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+      </nav>
+      <!-- Responsive banner image with 200px side margins, compatible with all devices -->
+      <div class="responsive-banner">
+        <img src="kuvat/HSJ_perustiedot_banner.png" alt="Perustiedot banner" class="responsive-banner-img">
+      </div>
+      <br><br>
+
+<div class="perustiedot-content">
+    <h2>Pätevyydet</h2>
+    <p><img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Hygieniapassi<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Anniskelupassi<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Ensiapukoulutus
+    </p>
+</div>
+<div class="perustiedot-content">
+    <h2>Koulutus</h2>
+    <p><img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Tampereen Seudun Ammattiopisto TREDU<br>
+        Matkailualan perustutkinto / Kaksoistutkinto<br>
+        8/2022 - 5/2025<br>
+        <br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Haaga-Helia Ammattikorkeakoulu<br>
+        Tietojenkäsittely Tradenomi<br>
+        8/2025 - Nykypäivä<br>
+        Arvioitu valmistumisvuosi: 5/2028
+    </p>
+</div>
+<div class="perustiedot-content"> 
+    <h2>Kielitaito</h2>
+    <p><img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Suomi (äidinkieli)<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Venäjä (erinomainen)<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Englanti (erinomainen)<br>
+    </p>
+   <h2>Ohjelmointikielet</h2>
+    <p><img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> HTML<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> CSS<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> JavaScript
+    </p>  
+</div>
+<div class="perustiedot-content">
+   <h2>Ohjelmistot</h2>
+    <p><img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Microsoft Office (Word, Excel, PowerPoint)<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Da Vinci Resolve<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Opera Cloud<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Symphony POS<br>
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:22px;vertical-align:middle;"> Restolution<br>
+    </p>
+</div>
+</body>
+</html>

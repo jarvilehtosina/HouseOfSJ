@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1265, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sina Järvilehto's portfolio website showcasing her skills, experiences, and contact information.">
+    <title>House of SJ</title>
+    <style>
+      .responsive-banner {
+        max-width: calc(100vw - 400px);
+        margin: 80px auto 16px auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      .responsive-banner-img {
+        width: 100%;
+        max-width: 1265px;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 0;
+      }
+      @media (max-width: 900px) {
+        .responsive-banner {
+          max-width: 100vw;
+          margin: 32px 0 12px 0;
+          padding: 0 8px;
+        }
+        .responsive-banner-img {
+          max-width: 100vw;
+          height: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="styleSJ.css">
+    <!-- Side flower images in margins -->
+  <img src="kuvat/HSJ_kukat.png" alt="Flower Left" class="side-flower side-flower-left">
+  <img src="kuvat/HSJ_kukat.png" alt="Flower Right" class="side-flower side-flower-right">
+    <!-- Fixed Navigation bar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="kuvat/HSJ_logo.svg" alt="SJ Logo" style="height:40px; width:auto; vertical-align:middle;">
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="perustiedot.html">Perustiedot</a></li>
+        <li><a href="tyokokemus.html">Työkokemus</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+      </nav>
+      <!-- Responsive banner image with 200px side margins, compatible with all devices -->
+      <div class="responsive-banner">
+        <img src="kuvat/HSJ_yhteystiedot_banner.png" alt="Perustiedot banner" class="responsive-banner-img">
+      </div>
+      <br><br>
+<div>
+    <h2>Ollaan yhteydessä!</h2>
+
+    <!-- Transparent contact box with icon and JS success message -->
+    <div style="max-width:500px;margin:32px auto 0 auto;padding:0;background:transparent;display:flex;align-items:flex-start;gap:18px;">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:40px;vertical-align:middle;margin-top:8px;">
+      <form id="contactForm" style="flex:1;display:flex;flex-direction:column;gap:14px;">
+        <input type="email" name="email" placeholder="Sähköposti" required style="padding:10px 14px;border-radius:8px;border:1px solid #5977a9;font-size:1em;background:transparent;color:#fff;">
+        <input type="text" name="subject" placeholder="Aihe" required style="padding:10px 14px;border-radius:8px;border:1px solid #5977a9;font-size:1em;background:transparent;color:#fff;">
+        <textarea name="message" placeholder="Viesti" required rows="5" style="padding:10px 14px;border-radius:8px;border:1px solid #5977a9;font-size:1em;resize:vertical;background:transparent;color:#fff;"></textarea>
+        <button type="submit" style="background:#5977a9;color:#fff;font-size:1.1em;font-weight:bold;padding:12px 0;border:none;border-radius:8px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Lähetä</button>
+        <div id="successMsg" style="display:none;margin-top:12px;color:#fff;font-weight:bold;text-align:center;">Viesti lähetettiin onnistuneesti!</div>
+      </form>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          document.getElementById('successMsg').style.display = 'block';
+          this.reset();
+        });
+      </script>
+    </div>
+
+</div>
+
+</body>
+</html>

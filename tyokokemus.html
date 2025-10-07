@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1265, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sina Järvilehto's portfolio website showcasing her skills, experiences, and contact information.">
+    <title>House of SJ</title>
+    <style>
+      .responsive-banner {
+        max-width: calc(100vw - 400px);
+        margin: 80px auto 16px auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      .responsive-banner-img {
+        width: 100%;
+        max-width: 1265px;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 0;
+      }
+      @media (max-width: 900px) {
+        .responsive-banner {
+          max-width: 100vw;
+          margin: 32px 0 12px 0;
+          padding: 0 8px;
+        }
+        .responsive-banner-img {
+          max-width: 100vw;
+          height: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="styleSJ.css">
+    <!-- Side flower images in margins -->
+  <img src="kuvat/HSJ_kukat.png" alt="Flower Left" class="side-flower side-flower-left">
+  <img src="kuvat/HSJ_kukat.png" alt="Flower Right" class="side-flower side-flower-right">
+    <!-- Fixed Navigation bar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="kuvat/HSJ_logo.svg" alt="SJ Logo" style="height:40px; width:auto; vertical-align:middle;">
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="perustiedot.html">Perustiedot</a></li>
+        <li><a href="tyokokemus.html">Työkokemus</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+      </nav>
+      <!-- Responsive banner image with 200px side margins, compatible with all devices -->
+      <div class="responsive-banner">
+        <img src="kuvat/HSJ_tyokokemus_banner.png" alt="Perustiedot banner" class="responsive-banner-img">
+      </div>
+<div class="flex-container">
+
+<div class="flex-item">
+  <h2>Scandic Hotels Group AB</h2>
+  <p>Vastaanottovirkailija<br>
+<i>Elokuu 2024 - Elokuu 2025 (1 vuosi)</i><br>
+<br>
+Suoritin viimeisen vastaanottopalvelujen tutkinnonosan Scandic Eden Nokialla, <br>jonka jälkeen sain työpaikan.
+Työnkuvaani kuului vastaanottovirkailijan työtehtävät,<br> jonka lisäksi olin myös tehnyt vuoroja aamiaistarjoilijana.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Opera Cloud
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Toimistotyöt
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Asiakaspalvelu
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Ongelmanratkaisu
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-item">
+  <h2>Ravintola Pons / H5 ravintolat Oy </h2>
+  <p>Tarjoilija<br>
+<i>Tammikuu 2023 - Elokuu 2025 (2 vuotta, 8 kuukautta)</i><br>
+<br>
+Suoritin asiakaspalvelun työssäopin tarjoilijana.<br>
+ Työtehtäviini kuului asiakaspalvelua, ruokien ja juomien viemistä, cocktailien tekeminen,<br> viinihuoneen täyttö ja tiskaaminen. <br>Jatkoin harjoitteluni jälkeen samoissa työtehtävissä.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Restolution
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      AC -tarjoilu
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Juomien valmistus
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Viinituntemus
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-item">
+  <h2>Pancho Villa / Restaura Oy</h2>
+  <p>Tarjoilija<br>
+<i>Toukokuu 2024 - Elokuu 2024 (3 kuukautta)</i><br>
+<br>
+Kesän 2024 työskentelin Pancho Villan eri toimipisteillä Tampereella.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Juomien valmistus
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Tilitys
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Etusetelit, lahjakortit (Epassi, Smartum, Edenred)
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Ravintolan sulkeminen
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-item">
+  <h2>Holiday Club Resorts Oy,<br> Holiday Club Tampereen Kylpylä </h2>
+  <p>Kokouspalvelut & aamupalatarjoilija<br>
+<i>24.4.-2.6.2023</i><br>
+<br>
+Tein kokouspalveluiden työssäopin Holiday Clubilla<br> jossa myös ajoittain pääsin työskentelemään aamupalatarjoilijana.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Ceepos
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Kokouspalvelut
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Aamiaistarjoilu
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Ongelmanratkaisu
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-item">
+  <h2>Pajakon Oy</h2>
+  <p>Toimistotyöntekijä<br>
+<i>Kesäkuu 2021 - Elokuu 2021 (3 kuukautta)</i><br>
+<br>
+Tein kesätöitä Pajakon Oy:llä 2021. Työtehtäviini kuului mm. Excel<br> – taulukoiden teko, rekisterin ylläpito, graafiset ratkaisut ja videoeditointi.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Microsoft Office -ohjelmat
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      DaVinci Resolve
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Asiakasrekisterin ylläpito
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Projektityöskentely
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-item">
+  <h2>Suomen Suoramainonta Oy</h2>
+  <p>Lehdenjakaja<br>
+<i>Helmikuu 2020 - Joulukuu 2020 (10 kuukautta)</i><br>
+<br>
+Toimin lehdenjakajana SSM:llä lähes koko vuoden. <br>Jaoin kahtena päivänä viikossa Tamperelaisia ja muita mainoslehtiä koteihin.
+</p>
+<!-- Avainosaamiset dropdown box -->
+<div class="skills-dropdown">
+  <div class="skills-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+    <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:35px;vertical-align:middle;margin-right:8px;">
+    Avainosaamiset
+  </div>
+  <div class="skills-list">
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Lehtien lajittelu
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Toimistotyöt
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Asiakaspalvelu
+    </div>
+    <div class="skill-box">
+      <img src="kuvat/HSJ_icon.svg" alt="icon" style="height:18px;vertical-align:middle;margin-right:8px;">
+      Ongelmanratkaisu
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+  // Simple toggle for dropdown
+  // (If you want animation, let me know!)
+</script>
+</body>
+</html>
